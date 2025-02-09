@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 INCLUDES = -I.
-LDFLAGS = -L./hcloud
+LDFLAGS = -L../../hcloud
 LIBS = -lhcloud -lreadline
 
 SERVER_OBJS = server.o

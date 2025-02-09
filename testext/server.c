@@ -1,4 +1,4 @@
-#include "hcloud/hcloud.h"
+#include "../hcloud.h"
 
 void	start_server(void)
 {
@@ -8,7 +8,7 @@ void	start_server(void)
 	int	client_socket;
 
 	create_server_or(&server);
-	printf("Servidor iniciado em 100.1.1.1 na porta %d\n", PORTP);
+	printf("Servidor iniciado em localhost: na porta %d\n", PORTP);
 
 	while (1)
 	{
