@@ -59,21 +59,21 @@ void	create_server(t_server *server, const char *ip)
 	{
 		perror("Endereço IP inválido");
 		close(server->server_socket);
-		exit(EXIT_FAILURE);
+		exit (EXIT_FAILURE);
 	}
 
 	if (bind(server->server_socket, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1)
 	{
 		perror("Erro ao vincular socket");
 		close(server->server_socket);
-		exit(EXIT_FAILURE);
+		exit (EXIT_FAILURE);
 	}
 
 	if (listen(server->server_socket, 5) == -1)
 	{
-		perror("Erro ao ouvir");
-		close(server->server_socket);
-		exit(EXIT_FAILURE);
+		perror ("Erro ao ouvir");
+		close (server->server_socket);
+		exit (EXIT_FAILURE);
 	}
 }
 
