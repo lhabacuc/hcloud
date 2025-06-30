@@ -69,7 +69,7 @@ void	create_server(t_server *server, const char *ip)
 		exit (EXIT_FAILURE);
 	}
 
-	
+
 	if (listen(server->server_socket, 5) == -1)
 	{
 		perror ("Erro ao ouvir");
